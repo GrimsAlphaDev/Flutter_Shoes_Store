@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 
 class BottomNavWidget extends StatelessWidget {
   const BottomNavWidget({
@@ -14,11 +13,11 @@ class BottomNavWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: const SizedBox(
+      child: SizedBox(
         height: 36,
         width: 36,
         child: Icon(
-          Ionicons.home,
+          icon,
           color: Colors.white,
         ),
       ),
